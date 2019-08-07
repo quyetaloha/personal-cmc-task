@@ -1,0 +1,571 @@
+<ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header">
+          <!-- <div class="row"> -->
+              <div class="col-md-1 offset-md-5"><span>Thông báo</span></div>
+          <!-- </div> -->
+          
+          
+          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>{{messageAlert}}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">OK</button>
+        </div>
+</ng-template>
+
+
+<!-- <div class="container">
+    <h3 class="h3">shopping Demo-1 </h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-1.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">20%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star disable"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Blouse</a></h3>
+                    <div class="price">$16.00
+                        <span>$20.00</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-3.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Plain Tshirt</a></h3>
+                    <div class="price">$5.00
+                        <span>$10.00</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-5.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Plain Tshirt</a></h3>
+                    <div class="price">$5.00
+                        <span>$10.00</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-7.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Plain Tshirt</a></h3>
+                    <div class="price">$5.00
+                        <span>$10.00</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-7.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Plain Tshirt</a></h3>
+                    <div class="price">$5.00
+                        <span>$10.00</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <div class="navbar navbar-inverse navbar-fixed-top"> -->
+  
+
+
+        <nav style="background-image:linear-gradient(#985e5e, #8a5151, #9e919100)" class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><img style="width: 5vw;" src="https://nhanlucnganhluat.vn/uploads/images/40e80c80/logo/2018-05/0797b7928e74.png"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#" (click)="showHome($event)">
+                        <i class="fa fa-home"></i>
+                        Home
+                        <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" (click)="showMap($event)">
+                        <i class="fa fa-map-marker" >
+                        </i>
+                        Bản đồ
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" (click)="showFormContact($event)">
+                        <i class="fa fa-envelope-o">
+                        </i>
+                        Liên hệ
+                      </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link disabled" href="#">
+                        <i class="fa fa-envelope-o">
+                          <span class="badge badge-warning">11</span>
+                        </i>
+                        Disabled
+                      </a>
+                    </li> -->
+                    <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-envelope-o">
+                          <span class="badge badge-primary">11</span>
+                        </i>
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li> -->
+                    <form class="form-inline my-2 my-lg-0">
+                        <input style="width: 30vw" [(ngModel)]="tmpkeySearch" name="search" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <button  style=" color: beige; border-color: beige" (click)="dosearch()" class="btn btn-outline-success my-2 my-sm-0"><i class="fa fa-search"></i></button>
+                    </form>
+                  </ul>
+                  
+                  <ul class="navbar-nav ">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" (click)="showCart($event)">
+                            <i class="fa fa-shopping-cart">
+                          <span class="badge badge-info">{{cartItems.length}}</span>
+                        </i>
+                        Cart
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <i class="fa fa-user-circle-o">
+                        </i>
+                        {{email}}
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </nav>
+              
+
+<!-- <div class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Home</a>
+      </div>
+      <div class="navbar-collapse collapse" id="searchbar">
+       
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="about.html" (click)="showCart($event)">My Cart</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" (click)="showMap($event)" title="Start a new search">Map</a></li>
+          <li><a href="#" (click)="showFormContact($event)" title="Start a new search">Contact</a></li>
+        </ul>
+       
+       
+       
+       <form class="navbar-form">
+          <div class="form-group" style="display:inline;">
+            <div class="input-group" style="display:table;">
+              <input [(ngModel)]="tmpkeySearch" class="form-control" name="search" placeholder="Search Here" autocomplete="off" autofocus="autofocus" type="text" />
+              <span (click)=dosearch(); class="input-group-addon" style="width:1%;"><span class="glyphicon glyphicon-search"></span></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+</div> -->
+
+
+
+<!-- <div class="container" *ngIf="isHomeShow">
+    <h2 class="h3" style="text-align: center">Danh sách khóa học </h2>
+    <div class="row">
+        <div style="height: 400px;margin-top: 3vw" class="col-md-3 col-sm-3" *ngFor="let item of listSourse|searchFilter:keySearch">
+            <div class="product-grid">
+                <div class="product-image" style="height: 20vw">
+                    <a href="#" style="height: 100%;">
+                        <img class="pic-1" style="height: 25vw" src="{{item.image?item.image:'https://i.ytimg.com/vi/FhAIc0tlyaQ/maxresdefault.jpg'}}">
+                    </a>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star disable"></li>
+                </ul>
+                <div class="product-content" style="height: 50%;background-color: bisque;border-radius: 18px 18px 0px 0px">
+                    <h3 class="title"><a href="#">{{item.subjectName|showDataPipe:"subjectName"}}</a></h3>
+                    <div class="price">
+                        {{item.createdBy.fullname}}
+                    </div>
+                    <div>{{item.description|showDataPipe:"description"}}</div>
+                    <a style="cursor: pointer" (click)="addToCart($event,item.id,content)" class="add-to-cart"><i class="fa fa-shopping-cart"></i> + Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+<div class="container"  *ngIf="isHomeShow">
+        
+        <div class="card border ">
+              <div class="card-header text-center">
+                    <h3 class="card-title">Danh sách khóa học</h3>
+              </div>
+              <div class="card-body">
+        <div class="row">
+            <div style="height: 400px;margin-top: 3vw" class="col-md-3 col-sm-3" *ngFor="let item of listSourse|searchFilter:keySearch">
+                <div class="product-grid">
+                    <div class="product-image" style="height: 20vw">
+                        <a href="#" style="height: 100%;">
+                            <img class="pic-1" style="height: 25vw" src="{{item.image?item.image:'https://i.ytimg.com/vi/FhAIc0tlyaQ/maxresdefault.jpg'}}">
+                        </a>
+                    </div>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star disable"></li>
+                    </ul>
+                    <div class="product-content" style="height: 50%;background-color: white;border-radius: 18px 18px 0px 0px">
+                        <h3 class="title"><a href="#">{{item.subjectName|showDataPipe:"subjectName"}}</a></h3>
+                        <div class="price">
+                            {{item.createdBy.fullname}}
+                        </div>
+                        <div>{{item.description|showDataPipe:"description"}}</div>
+                        <a style="cursor: pointer" (click)="addToCart($event,item.id,content)" class="add-to-cart"><i class="fa fa-shopping-cart"></i> + Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+              </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="panel panel-primary" *ngIf="isCartShow">
+      <div class="panel-heading">
+            <h3 class="panel-title">Giỏ hàng</h3>
+      </div>
+      <div class="panel-body">
+        <div class="container" >
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-md-offset-1">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of cartItems">
+                                <td class="col-sm-8 col-md-6">
+                                <div class="media">
+                                    <a class="thumbnail pull-left" href="#"> <img class="media-object" src="{{item.image}}" style="width: 72px; height: 72px;"> </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">{{item.subjectName|showDataPipe:"subjectName"}}</a></h4>
+                                        <h5 class="media-heading"> tác giả <a href="#">{{item.createdBy.fullname}}</a></h5>
+                                        <span>Status: </span><span class="text-success"><strong>active</strong></span>
+                                    </div>
+                                </div></td>
+                                <td class="col-sm-1 col-md-1">
+                                <button type="button" class="btn btn-danger" (click)="removeItemFromCart(item.id)">
+                                        <i class="fa fa-trash"></i> Remove
+                                </button></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                <button type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                                </button></td>
+                                <td>
+                                <button type="button" class="btn btn-success">
+                                    Checkout <span class="glyphicon glyphicon-play"></span>
+                                </button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
+</div> -->
+
+
+
+
+<div class="container" *ngIf="isCartShow">
+        
+        <div class="card border ">
+              <div class="card-header text-center">
+                    <h3 class="card-title">Giỏ hàng</h3>
+              </div>
+              <div class="card-body">
+                    <div class="container" >
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-md-offset-1">
+                                    <table class="table table-hover">
+                                        <tbody>
+                                            <tr *ngFor="let item of cartItems">
+                                                <td class="col-sm-8 col-md-6">
+                                                <div class="media">
+                                                    <a class="thumbnail pull-left" href="#"> <img class="media-object" src="{{item.image}}" style="width: 72px; height: 72px;"> </a>
+                                                    <div class="media-body" style=" margin-left: 5vw">
+                                                        <h5 class="media-heading"><a href="#">{{item.subjectName|showDataPipe:"subjectName"}}</a></h5>
+                                                        <h6 class="media-heading"> tác giả: <a href="#">{{item.createdBy.fullname}}</a></h6>
+                                                        <!-- <span>Status: </span><span class="text-success"><strong>active</strong></span> -->
+                                                    </div>
+                                                </div></td>
+                                                <td class="col-sm-1 col-md-1">
+                                                <button type="button" class="btn btn-danger" (click)="removeItemFromCart(item.id)">
+                                                        <i class="fa fa-trash"></i>
+                                                </button></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td colspan="2" style="text-align:center">
+                                                <button type="button" class="btn btn-success">
+                                                    Checkout <span class="glyphicon glyphicon-play"></span>
+                                                </button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+              </div>
+        </div>
+</div>
+
+
+
+
+
+<div class="container">
+        
+          <div class="card border "  *ngIf="isMapShow">
+                <div class="card-header text-center">
+                      <h3 class="card-title">Map</h3>
+                </div>
+                <div class="card-body">
+                        <div class="container" style="height: 31vw">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.054345589384!2d105.78217071445464!3d21.030511393095516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1564311100965!5m2!1sen!2s" width="94%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                          </div>
+                </div>
+          </div>
+</div>
+
+<div class="container" *ngIf="isFormContactShow">
+    
+<div class="card border " >
+        <div class="card-header text-center">
+              <h3 class="card-title">Liên hệ</h3>
+        </div>
+        <div class="card-body">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" style="width: 94%;">
+                                <div class="well well-sm">
+                                    <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="name">
+                                                    Tên</label>
+                                                <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">
+                                                    Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                                    </span>
+                                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="subject">
+                                                    Chủ đề</label>
+                                                <select id="subject" name="subject" class="form-control" required="required">
+                                                    <option value="na" selected="">Chọn một:</option>
+                                                    <option value="service">Tạo tài khoản</option>
+                                                    <option value="suggestions">Mua hàng</option>
+                                                    <option value="product">Shipping</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="name">
+                                                    Message</label>
+                                                <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                                    placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                                Gửi</button>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+        </div>
+  </div>
+</div>
+
+<footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+          <a href="https://mdbootstrap.com/education/bootstrap/"> CMC Global</a>
+        </div>
+        <!-- Copyright -->
+      
+</footer>
+      <!-- Footer -->

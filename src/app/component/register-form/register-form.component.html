@@ -1,0 +1,42 @@
+<div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="/assets/image/logo_cmc_global.jpg" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <form>
+            <input [(ngModel)]="registerData.user.fullname" type="text" id="fullname" class="fadeIn second" name="fullname" placeholder="fullname...">
+            <input [(ngModel)]="registerData.user.username"  type="text" id="username" class="fadeIn third" name="username" placeholder="username...">
+            <input [(ngModel)]="registerData.user.email"  type="text" id="email" class="fadeIn second" name="email" placeholder="email...">
+            <input [(ngModel)]="registerData.user.password"  type="text" id="password" class="fadeIn third" name="password" placeholder="password...">
+            <input (click)="doRegister($event,content)" type="submit" class="fadeIn fourth" value="Register">
+          </form>
+      
+          <!-- Register -->
+          <div id="formFooter">
+            <a class="underlineHover" (click)="isLogin=!isLogin">Login here</a>
+          </div>
+        </div>
+</div>
+<ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header">
+          <!-- <div class="row"> -->
+              <div class="col-md-1 offset-md-5"><span>Alert</span></div>
+          <!-- </div> -->
+          
+          
+          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>{{messageAlert}}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">OK</button>
+        </div>
+      </ng-template>
